@@ -29,7 +29,7 @@ def main():
         # 假设要读取的列名为'医院名称'，替换成你实际需要读取的列名
         column_name = '医院名称'
         # 读取指定列的数据，进行查询并更新等级
-        for i in range(10):
+        for i in range(len(df)):
             title = df.loc[i, column_name]
             grade = hospital(title)
             st.write("医院：", title)
