@@ -49,6 +49,8 @@ def main():
         column_name = '医院名称'
         # 读取指定列的数据，进行查询并更新等级
         for i in range(len(df)):
+            if i % 10 == 0:
+                time.sleep(10)
             title = df.loc[i, column_name]
             title = hospital_name(title)
             grade = hospital(title)
@@ -56,7 +58,7 @@ def main():
             st.write("等级：", grade)
             if grade:
                 df.loc[i, '医院等级'] = grade
-            time.sleep(5)
+            time.sleep(3)
         # 显示DataFrame内容
         st.write(df)
         # 保存更新后的DataFrame到临时文件
