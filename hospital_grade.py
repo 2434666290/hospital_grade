@@ -10,7 +10,7 @@ import re
 def hospital_name(title):
     url_1 = 'https://www.qcc.com/web/search?key={title}'.format(title=title)
     headers = {
-        'Cookie': 'qcc_did=aab8e627-253f-494b-b897-8a2a59d578f1; UM_distinctid=1898fb712c1431-04dd3c54ec68da-7c546c7d-e1000-1898fb712c21eb9; acw_tc=0ed7aca716909458999337914e1ec45cfad584452c29b677f1f984e5fa; QCCSESSID=91f457968a84d4a6fbd2183521; MQCCSESSID=bf13365a3d3beaafdf01260f12; CNZZDATA1254842228=515979886-1690330988-https%253A%252F%252Fwww.bing.com%252F%7C1690946655',
+        'Cookie': 'qcc_did=aab8e627-253f-494b-b897-8a2a59d578f1; UM_distinctid=1898fb712c1431-04dd3c54ec68da-7c546c7d-e1000-1898fb712c21eb9; MQCCSESSID=bf13365a3d3beaafdf01260f12; QCCSESSID=3f4c08f49647eb46fd375ddd06; acw_tc=ca68ba9f16909603471663522ee479e522d6c3a5a0da5ce9e4ec0f7840; CNZZDATA1254842228=515979886-1690330988-https%253A%252F%252Fwww.bing.com%252F%7C1690957455',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188'
     }
     response = requests.get(url_1, headers=headers)
