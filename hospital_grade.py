@@ -56,7 +56,7 @@ def main():
             st.write("等级：", grade)
             if grade:
                 df.loc[i, '医院等级'] = grade
-            time.sleep(2)
+            time.sleep(5)
         # 显示DataFrame内容
         st.write(df)
         # 保存更新后的DataFrame到临时文件
